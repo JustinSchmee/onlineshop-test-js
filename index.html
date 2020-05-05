@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Shop</title>
+    <meta charset="UTF-8" />
+    
+	<link rel="stylesheet" href="./style.css">
+
+  </head>
+
+  <body>
+    <div id="msg"></div> <br/>
+    <form id="kundenForm">
+	 <fieldset id="kundenFormField"> <!-- fieldset wird benötigt um die Input`s Readonly zu stellen -->
+      <p>Kunde anlegen</p>
+      Vorname <input  id="vorname" type="text"  size="15"   required="required" /> <br />
+      Nachname <input id="nachname"  /> <br />
+      Guthaben <input id="guthaben"  type="number" step="0.01" required="required" /> <br />
+      Kreditwürdig <input id="kreditwuerdig" type="checkbox" /> <br />
+      <button type="submit">Speichern</button>
+	</fieldset>
+	<button type="button" id="neuerKundeBtn" class="hide" >Neuer Kunde</button> 
+    </form>
+ 
+    <form id="bestellungForm" > <!-- class="hide" entfernt -->
+	<fieldset id="bestellungFormField" disabled> <!-- fieldset wird benötigt um die Input`s Readonly zu stellen -->
+
+      <p>Bestellung zu Kunde hinzufügen</p>
+      Beschreibung <input id="beschreibung" required /> <br />
+      Betrag <input id="betrag" type="number" required step="0.01" /> <br />
+      <button type="submit">Hinzufügen</button>
+	</fieldset>
+    </form>
+
+    <button type="button" id="loeschenBtn">Alles löschen</button> 
+    <button type="button" id="sumBtn">Summieren von allen Bestellungen</button>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

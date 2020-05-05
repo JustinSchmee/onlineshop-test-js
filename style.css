@@ -1,0 +1,7 @@
+h1, h2 {
+  font-family: Lato;
+}
+fieldset{
+	width: 350px; /*  Setzen der Weite und entfernen der Umrandung  */
+    border: none;
+}
